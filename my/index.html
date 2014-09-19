@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="tranben" />
+    <link rel="stylesheet" type="text/css" href="../build/css/af.ui.base.css"  />
+    <link rel="stylesheet" type="text/css" href="../build/css/icons.css"  />
+
+     <script src="../build/appframework.min.js"></script>
+     <script src="../build/ui/appframework.ui.min.js"></script>
+
+
+    <title>Untitled 1</title>
+</head>
+
+
+<body>
+
+<script>
+$(function(){
+
+});
+function sayhello(){
+    alert('ready')
+}
+
+
+            if (!((window.DocumentTouch && document instanceof DocumentTouch) || 'ontouchstart' in window)) {
+                var script = document.createElement("script");
+                script.src = "../plugins/af.desktopBrowsers.js";
+                var tag = $("head").append(script);
+                //$.os.desktop=true;
+            }
+</script>
+
+<div id="afui">
+
+<div id="header" class="header" >
+<a id="backButton" href="javascript:;" class="button" style="visibility: hidden; ">Back</a>
+<h1 id="pageTitle">Page Title</h1>
+</div>
+
+<div id="content">
+
+    <div id="main" data-title="Welcome" selected="true" class="panel" data-defer="login.html" js-scrolling="true"   data-nav="leftNav" data-aside="rightNav" ></div>
+    
+    <div id="setting" class="panel"  data-load="sayhello" data-tab="setting" js-scrolling="true"  >
+        <ul class="list inset">
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            <li>item1</li>
+            
+        </ul>
+    </div>
+
+    <div id="modtest" class="panel" modal="true">
+        im model test
+    </div>
+
+</div>
+
+
+    <div id="navbar" class="footer">
+        <a href="#welcome" class="icon home">Home</a> 
+        <a href="#welcome" class="icon home">Home</a>
+        <a href="#modtest" class="icon home">modal</a> 
+        <a  href="#setting" class="icon settings">Home</a>
+    </div>
+    
+
+<!--
+<nav id="main">
+Default side menu1
+</nav>
+ 
+<nav id="second">
+Second menu2
+</nav>
+-->
+
+</div>
+
+</body>
+</html>
